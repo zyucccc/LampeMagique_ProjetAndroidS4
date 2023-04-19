@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LampeMagique</string>
+    <string name="createur">Auteur : Chantal Keller</string>
+
+    <string name="plusRouge">+rouge</string>
+    <string name="moinsRouge">-rouge</string>
+    <string name="plusVert">+vert</string>
+    <string name="moinsVert">-vert</string>
+    <string name="plusBleu">+bleu</string>
+    <string name="moinsBleu">-bleu</string>
+
+    <string name="composantesInitiales">rouge : 255 ; vert : 0 ; bleu : 0</string>
+    <string name="composantes">rouge : %1$d ; vert : %2$d ; bleu : %3$d</string>
+
+    <string name="couleurInitiale">Couleur Initiale ?</string>
+    <string name="rouge">rouge</string>
+    <string name="vert">vert</string>
+    <string name="bleu">bleu</string>
+
+    <string name="prefComposantes">Affichage des composantes</string>
+    <string name="pref">Préférences</string>
+</resources>

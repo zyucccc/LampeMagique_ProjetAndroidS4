@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Partie 2 : Création de l'interface verticale-->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LampeMagiqueMainActivity">
+
+    <Button
+        android:id="@+id/couleur"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="3"
+        android:background="@color/red"
+        android:text="@string/composantesInitiales"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/plusRouge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/plusRouge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        android:text="@string/plusRouge"
+        app:layout_constraintBottom_toTopOf="@id/plusVert"
+        app:layout_constraintEnd_toStartOf="@id/moinsRouge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/couleur" />
+
+    <Button
+        android:id="@+id/moinsRouge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        android:text="@string/moinsRouge"
+        app:layout_constraintBottom_toTopOf="@id/moinsVert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/plusRouge"
+        app:layout_constraintTop_toBottomOf="@id/couleur" />
+
+    <Button
+        android:id="@+id/plusVert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        android:text="@string/plusVert"
+        app:layout_constraintBottom_toTopOf="@id/plusBleu"
+        app:layout_constraintEnd_toStartOf="@id/moinsVert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusRouge" />
+
+    <Button
+        android:id="@+id/moinsVert"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        android:text="@string/moinsVert"
+        app:layout_constraintBottom_toTopOf="@id/moinsBleu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/plusVert"
+        app:layout_constraintTop_toBottomOf="@id/moinsRouge" />
+
+    <Button
+        android:id="@+id/plusBleu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        android:text="@string/plusBleu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/moinsBleu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusVert" />
+
+    <Button
+        android:id="@+id/moinsBleu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintHorizontal_weight="1"
+        android:text="@string/moinsBleu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/plusBleu"
+        app:layout_constraintTop_toBottomOf="@id/moinsVert" />
+
+</android.support.constraint.ConstraintLayout>
